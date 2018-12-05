@@ -2,10 +2,13 @@ package com.bottega.boschdoc.draft.flow;
 
 class QDocDraft {
 
-	private NumberGenerator.QDocNumber number;
+	private QDocType qdocType;
+	private QDocNumber number;
 
-	void create(QDocType qdocType, NumberGenerator.QDocNumber type) {
-		number = type;
+	void create(QDocType qdocType, QDocNumber number) {
+		this.qdocType = qdocType;
+		this.number = number;
+
 	}
 
 	void publish() {

@@ -11,7 +11,7 @@ public class FlowCommandHandler {
 
 		repo.apply(command.getId(), qDocDraft -> {
 
-			NumberGenerator.QDocNumber number = numberGenerator.generate();
+			QDocNumber number = numberGenerator.generate();
 
 			qDocDraft.create(command.getType(),number);
 		});
