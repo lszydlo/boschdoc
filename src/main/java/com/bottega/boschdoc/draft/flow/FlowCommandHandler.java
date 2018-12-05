@@ -5,10 +5,16 @@ package com.bottega.boschdoc.draft.flow;
 public class FlowCommandHandler {
 
 	private DraftRepo repo;
+	private NumberGenerator numberGenerator;
 
 	public void handle(DoCreateDraft command) {
 
-		repo.apply(command.getId(), qDocDraft -> qDocDraft.create(command.getType()));
+		repo.apply(command.getId(), qDocDraft -> {
+
+			NumberGenerator.QDocNumber number = numberGenerator.generate();
+
+			qDocDraft.create(command.getType(),number);
+		});
 
 	}
 

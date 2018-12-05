@@ -8,5 +8,5 @@ import java.util.UUID;
 public class DoCreateDraft {
 
 	UUID id;
-	String type;
+	QDocType type;
 }

@@ -1,15 +1,18 @@
 package com.bottega.boschdoc.draft.flow;
 
 class QDocDraft {
-	void create(String type) {
+
+	private NumberGenerator.QDocNumber number;
+
+	void create(QDocType qdocType, NumberGenerator.QDocNumber type) {
+		number = type;
+	}
+
+	void publish() {
 
 	}
 
-	public void publish() {
-
-	}
-
-	public void verify() {
+	void verify() {
 
 	}
 }
