@@ -1,7 +1,7 @@
 package com.bottega.boschdoc.gateway;
 
-import com.bottega.boschdoc.draft.flow.DoCreateDraft;
-import com.bottega.boschdoc.draft.flow.FlowCommandHandler;
+import com.bottega.boschdoc.draft.flow.domain.consumes.DoCreateDraft;
+import com.bottega.boschdoc.draft.flow.domain.FlowCommandHandler;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

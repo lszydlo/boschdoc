@@ -1,4 +1,4 @@
-package com.bottega.boschdoc.draft.flow;
+package com.bottega.boschdoc.draft.flow.domain;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;

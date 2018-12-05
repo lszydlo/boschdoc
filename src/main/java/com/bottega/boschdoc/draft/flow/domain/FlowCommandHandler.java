@@ -1,6 +1,10 @@
-package com.bottega.boschdoc.draft.flow;
+package com.bottega.boschdoc.draft.flow.domain;
 
 // typing IO
+
+import com.bottega.boschdoc.draft.flow.domain.consumes.DoCreateDraft;
+import com.bottega.boschdoc.draft.flow.domain.consumes.DoPublishDraft;
+import com.bottega.boschdoc.draft.flow.domain.consumes.DoVerifyDraft;
 
 public class FlowCommandHandler {
 

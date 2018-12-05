@@ -1,5 +1,6 @@
-package com.bottega.boschdoc.draft.flow;
+package com.bottega.boschdoc.draft.flow.domain;
 
+import com.bottega.boschdoc.draft.flow.domain.ports.SysMode;
 import lombok.AllArgsConstructor;
 
 import java.time.LocalDate;
@@ -7,7 +8,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 class NumberGenerationPolicy {
 	static final private String STRING = "/";
-	private String mode;
+	private SysMode mode;
 	private boolean isAuditor;
 	private boolean isDemo;
 	private LocalDate date;

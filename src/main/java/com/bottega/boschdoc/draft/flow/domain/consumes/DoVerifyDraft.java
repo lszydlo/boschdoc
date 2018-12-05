@@ -1,4 +1,4 @@
-package com.bottega.boschdoc.draft.flow;
+package com.bottega.boschdoc.draft.flow.domain.consumes;
 
 import java.util.UUID;
 

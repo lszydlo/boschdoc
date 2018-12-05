@@ -1,5 +1,9 @@
-package com.bottega.boschdoc.draft.flow;
+package com.bottega.boschdoc.draft.flow.domain;
 
+import com.bottega.boschdoc.draft.flow.domain.ports.CurrentTime;
+import com.bottega.boschdoc.draft.flow.domain.ports.CurrentUser;
+import com.bottega.boschdoc.draft.flow.domain.ports.SysMode;
+import com.bottega.boschdoc.draft.flow.domain.ports.SystemConfig;
 import lombok.AllArgsConstructor;
 
 import java.time.LocalDate;
@@ -16,7 +20,7 @@ class NumberGenerator {
 
 	QDocNumber generate() {
 		// --- data extraction  start--
-		String mode = systemConfig.getMode();
+		SysMode mode = systemConfig.getMode();
 		boolean isDemo = systemConfig.isDemo();
 		boolean isAuditor = currentUser.isAuditor();
 		LocalDate date = currentTime.date();
